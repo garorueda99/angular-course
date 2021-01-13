@@ -1,5 +1,4 @@
 <div class="course-card" *ngIf="course" #container>
-  <div>{{ testAR }}</div>
   <div class="course-title">
     {{ cardIndex + ". " + course.description }}
   </div>
@@ -21,6 +20,8 @@
       ADVANCED {Advanced} }
     </div>
   </div>
-
-  <button (click)="onSaveClicked(courseTitle.value)">Save Course</button>
+  <div class="btn-container">
+    <button (click)="onSaveClicked(courseTitle.value)">Save Course</button>
+    <button (click)="onViewClicked(courseTitle.value)">View Course</button>
+  </div>
 </div>

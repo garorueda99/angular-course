@@ -24,7 +24,6 @@ import { CoursesService } from "../courses.service";
   styleUrls: ["./course-card.component.css"],
 })
 export class CourseCardComponent implements OnInit {
-  testAR = "Test Andres Rueda";
   @Input()
   course: Course;
 
@@ -47,5 +46,8 @@ export class CourseCardComponent implements OnInit {
 
   onSaveClicked(description: string) {
     this.courseEmitter.emit({ ...this.course, description });
+  }
+  onViewClicked(): void {
+    console.log(console.log("button clicked view"));
   }
 }

@@ -22,7 +22,7 @@ import { CourseTitleComponent } from "./course-title/course-title.component";
 })
 export class AppComponent implements OnInit {
   courses: Course[] = COURSES;
-  testAR = "Test Andres Rueda";
+
 
   coursesTotal = this.courses.length;
 
